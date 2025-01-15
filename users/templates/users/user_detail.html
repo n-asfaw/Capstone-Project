@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>{{ user.username }}</title>
+</head>
+<body>
+    <h1>User: {{ user.username }}</h1>
+    <p><strong>Email:</strong> {{ user.email }}</p>
+    <p><strong>Date of Membership:</strong> {{ user.date_of_membership }}</p>
+    <p><strong>Status:</strong> {{ user.is_active|yesno:"Active,Inactive" }}</p>
+</body>
+</html>

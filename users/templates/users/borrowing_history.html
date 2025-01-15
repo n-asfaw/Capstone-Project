@@ -1,0 +1,8 @@
+<h1>Your Borrowing History</h1>
+<ul>
+    {% for transaction in transactions %}
+        <li>{{ transaction.book.title }} - Borrowed on: {{ transaction.date_borrowed }}</li>
+    {% empty %}
+        <li>You have no borrowing history.</li>
+    {% endfor %}
+</ul>
